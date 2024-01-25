@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+.card{
+    /* border: 2px solid white; */
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 30px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.error{
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    display: none;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 3vw;
+    width: 90%;
+}
+@media screen and (min-width : 600px) {
+    .search input{
+        font-size: 18px;
+    }
+}
+.search button{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #ebfffc;
+    border-radius: 50%;
+}
+.search button img{
+    width:20px;
+
+}
+.weather{
+    display: none;
+}
+.weathericon{
+    width: 140px;
+    margin-top:20px;
+
+}
+.weather h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-inline: 20px;
+}
+@media screen and (max-width : 350px) {
+    .details{
+        /* background-color: black; */
+        display: block;
+        padding: 10px 0px;
+    }
+    .details #prop1{ 
+        margin-bottom: 20px;
+    }
+}
